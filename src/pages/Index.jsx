@@ -2,10 +2,6 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
-  // This will cause a runtime error
-  const undefinedObject = undefined;
-  const errorTrigger = undefinedObject.nonExistentProperty;
-
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
       <h1 className="text-6xl font-bold text-white mb-8 animate-fade-in">Hello Viktor!</h1>
