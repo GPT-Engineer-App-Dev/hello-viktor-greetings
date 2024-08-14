@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Index = () => {
+  useEffect(() => {
+    throw new Error("This is an unhandled error for testing purposes");
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500">
       <h1 className="text-6xl font-bold text-white mb-8 animate-fade-in">Hello Viktor!</h1>
